@@ -1,0 +1,133 @@
+html, body {
+    background-image: url('../img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+select, input[type="text"], input[type="email"], button[type="button"], input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover, input[type="text"]:hover, input[type="email"]:hover, button[type="button"]:hover, input[type="submit"]:hover {
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.4);
+}
+
+select:focus, input[type="text"]:focus, input[type="email"]:focus, button[type="button"]:focus, input[type="submit"]:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.6);
+}
+
+input[type="submit"], button[type="button"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #8e44ad;
+}
+
+.alert {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.document-input-container, .contact-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.document-type-select, .contact-type-select {
+    width: 100px; /* Ancho fijo para el select */
+    height: 40px; /* Altura consistente */
+    margin-right: 10px; /* Espacio entre el select y el input */
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    background-color: #fafafa;
+}
+
+.document-value-input, .contact-detail-input {
+    flex: 1; /* El input ocupa el espacio restante */
+    height: 40px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px; /* Ajustado para coincidir con el tamaño del select */
+    box-sizing: border-box;
+}
+
+.document-value-input::placeholder, .contact-detail-input::placeholder {
+    color: #aaa; /* Color de texto del placeholder */
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4a0072; /* Color lila oscuro */
+}
+.btn-primary {
+    background-color: #8e44ad;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #6d129e;
+}

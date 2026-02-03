@@ -1,0 +1,121 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el fondo */
+html, body {
+    background-image: url('../img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    font-family: Arial, sans-serif; /* Ajusta la fuente según tu preferencia */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* Estilos para la caja de contenido */
+.caja {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    color: #333;
+}
+
+/* Estilos para el título */
+.caja h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para etiquetas y controles de formulario */
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form select,
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form button[type="button"],
+form input[type="submit"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form select:hover,
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="date"]:hover,
+form button[type="button"]:hover,
+form input[type="submit"]:hover {
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.4);
+}
+
+form select:focus,
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form button[type="button"]:focus,
+form input[type="submit"]:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.6);
+}
+
+/* Estilos para botones */
+form input[type="submit"],
+form button[type="button"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form button[type="button"]:hover {
+    background-color: #8e44ad;
+}
+
+/* Estilos para mensajes de alerta */
+.message {
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-align: center;
+}

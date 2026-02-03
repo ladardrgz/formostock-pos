@@ -1,0 +1,123 @@
+html, body {
+    background-image: url('../img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Asegura que todo esté en columna */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+select, input[type="text"], input[type="email"], input[type="date"], input[type="password"], button[type="button"], input[type="submit"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="date"]:hover, input[type="password"]:hover, button[type="button"]:hover, input[type="submit"]:hover {
+    border-color: #9b59b6;
+    box-shadow: 0 0 8px rgba(155, 89, 182, 0.4);
+}
+
+select:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus, input[type="password"]:focus, button[type="button"]:focus, input[type="submit"]:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.6);
+}
+
+input[type="submit"], button[type="button"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #8e44ad;
+}
+
+.alert {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.reset-password {
+    margin-top: 20px; /* Espacio adicional entre los formularios */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 95%; /* Asegura que ocupe todo el ancho */
+}

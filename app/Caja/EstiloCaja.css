@@ -1,0 +1,34 @@
+body {
+  background-image: url('../assets/img/background-black.png');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área del body */
+  background-position: center; /* Centra la imagen en el body */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+/* Alineación en línea para los campos de formulario */
+.form-group-inline {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para el select más pequeño */
+.form-group-inline .form-control.small {
+  flex: 0 0 100px; /* Ajusta el ancho del select como desees */
+}
+
+/* Margen entre los campos */
+.form-group-inline .form-group {
+  margin-right: 15px; /* Ajusta el margen según sea necesario */
+}
+
+/* Estilo para las casillas del formato de documento */
+.input-document {
+  display: flex;
+  gap: 3px; /* Espacio entre las casillas */
+}
+
+/* Estilo para cada casilla */
+.input-document input {
+  width: 50px; /* Ajusta el ancho de las casillas */
+  text-align: center;
+  font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
+}

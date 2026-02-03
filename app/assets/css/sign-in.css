@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-custom {
+  background-color: #74227E;
+  color: #FFFFFF;
+}
+
+.btn-custom:hover {
+  background-color: #4B0082;
+  color: #FFFFFF;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert-warning::before {
+  content: "⚠️";
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: #721c24;
+  border-color: #721c24;
+}
+
+.alert-danger::before {
+  content: "🚨";
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-success::before {
+  content: "✅";
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.alert.fade {
+  opacity: 0;
+}
+
+.nombre-de-la-app {
+  color: #6a0dad;
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  color: #74227E;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  color: #74227E;
+}
+
+.forgot-password a:hover {
+  color: #6a0dad;
+}
+
+.forgot-password a:active {
+  color: #74227E;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 134px;
+}
+
+html[data-bs-theme="light"] .logo-dark {
+  display: none;
+}
+
+html[data-bs-theme="light"] .logo-light {
+  display: block;
+}
+
+html[data-bs-theme="dark"] .logo-light {
+  display: none;
+}
+
+html[data-bs-theme="dark"] .logo-dark {
+  display: block;
+}
+
+.sistema {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 3px;
+}

@@ -1,0 +1,121 @@
+/* Barra de navegación de la sección usuarios */
+body {
+    background: url('../img/background-black.png') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda el área */
+    /* Establece una imagen de fondo fija y centrada para toda la página. */
+}
+
+/* Estilo para el campo de búsqueda */
+.form-control {
+    border-color: #9b59b6; /* Color del borde del campo de búsqueda */
+}
+
+/* Tamaño pequeño para los botones */
+.btn-img {
+    padding: 0; /* Elimina el relleno para que el botón solo contenga el ícono */
+    width: 30px; /* Ajusta el ancho del botón */
+    height: 30px; /* Ajusta la altura del botón */
+    border: none; /* Elimina cualquier borde del botón */
+    background: none; /* Establece el fondo como transparente */
+    display: inline-flex; /* Alinea la imagen dentro del botón */
+    justify-content: center; /* Centra la imagen dentro del botón */
+    align-items: center; /* Centra la imagen verticalmente dentro del botón */
+    margin-right: 10px; /* Ajusta el espacio entre los iconos según sea necesario */
+    /* Define el estilo del botón de imagen, eliminando relleno, borde y fondo, y centrando la imagen dentro del botón. */
+}
+
+.btn-img img {
+    width: 100%; /* Asegura que la imagen ocupe todo el tamaño del botón */
+    height: 100%; /* Asegura que la imagen ocupe todo el tamaño del botón */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    /* Define el tamaño de la imagen dentro del botón de imagen. */
+}
+
+/* Estilo para el botón de agregar */
+.add-button {
+    margin: 20px;
+    padding: 10px 20px; /* Espacio interno del botón */
+    background-color: #6a0dad; /* Color lila claro */
+    border: none; /* Elimina cualquier borde predeterminado */
+    border-radius: 15px; /* Bordes redondeados */
+    color: #fff; /* Color del texto blanco */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+    /* Define el estilo del botón de agregar, incluyendo margen, relleno, color de fondo, borde, tamaño de fuente y efecto de transición. */
+}
+
+.add-button:hover {
+    background-color: #642474; /* Cambia el color del fondo al pasar el mouse */
+    /* Define el color de fondo del botón al pasar el mouse sobre él. */
+}
+
+/* Estilo para el botón primario */
+.btn-primary {
+    background-color: #9b59b6; /* Color lila claro para el fondo del botón */
+    border-color: #9b59b6; /* Color del borde del botón */
+    color: #ffffff; /* Color del texto del botón */
+    /* Define el estilo del botón primario, incluyendo color de fondo, borde y texto. */
+}
+
+/* Estilo para el botón primario en hover */
+.btn-primary:hover {
+    background-color: #8e44ad; /* Color lila más oscuro para el fondo en hover */
+    border-color: #8e44ad; /* Color del borde del botón en hover */
+    /* Define el color de fondo y borde del botón primario al pasar el ratón sobre él. */
+}
+
+/* Estilo para el paginador personalizado */
+.custom-pagination .page-link {
+    color: #fff !important;
+    background-color: #6a0dad !important; /* Color lila */
+    border-color: #6a0dad !important; /* Color lila para los bordes */
+    /* Define el color de fondo, borde y texto para los enlaces de paginación. */
+}
+
+.custom-pagination .page-link:hover {
+    color: #fff !important;
+    background-color: #4a0072 !important; /* Un tono más oscuro de lila al pasar el ratón */
+    border-color: #4a0072 !important; /* Un tono más oscuro de lila al pasar el ratón */
+    /* Define el color de fondo y borde para los enlaces de paginación al pasar el ratón sobre ellos. */
+}
+
+.custom-pagination .page-item.active .page-link {
+    color: #fff !important;
+    background-color: #4a0072 !important; /* Un tono más oscuro de lila para el botón activo */
+    border-color: #4a0072 !important; /* Un tono más oscuro de lila para el borde del botón activo */
+    /* Define el color de fondo y borde para el enlace de paginación activo. */
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #ddd !important; /* Color gris claro para el botón deshabilitado */
+    background-color: #f5f5f5 !important; /* Color gris claro para el fondo del botón deshabilitado */
+    border-color: #ddd !important; /* Color gris claro para el borde del botón deshabilitado */
+    /* Define el color de fondo, borde y texto para los enlaces de paginación deshabilitados. */
+}
+
+nav[aria-label="Page navigation"] .page-link {
+    color: #fff !important; /* Texto blanco */
+    background-color: #6a0dad !important; /* Color lila */
+    border: 1px solid #6a0dad !important; /* Borde del paginador */
+    /* Define el color de fondo, borde y texto para los enlaces de la paginación. */
+}
+
+nav[aria-label="Page navigation"] .page-link:hover {
+    background-color: #4a0072 !important; /* Un tono más oscuro de lila al pasar el ratón */
+    border-color: #4a0072 !important; /* Un tono más oscuro de lila al pasar el ratón */
+    /* Define el color de fondo y borde para los enlaces de la paginación al pasar el ratón sobre ellos. */
+}
+
+nav[aria-label="Page navigation"] .page-item.active .page-link {
+    background-color: #4a0072 !important; /* Un tono más oscuro de lila para el botón activo */
+    border-color: #4a0072 !important; /* Un tono más oscuro de lila para el borde del botón activo */
+    /* Define el color de fondo y borde para el enlace de paginación activo. */
+}
+
+nav[aria-label="Page navigation"] .page-item.disabled .page-link {
+    color: #ddd !important; /* Color gris claro para el botón deshabilitado */
+    background-color: #f5f5f5 !important; /* Color gris claro para el fondo del botón deshabilitado */
+    border-color: #ddd !important; /* Color gris claro para el borde del botón deshabilitado */
+    /* Define el color de fondo, borde y texto para los enlaces de paginación deshabilitados. */
+}

@@ -1,0 +1,174 @@
+html, body {
+    background-image: url('../assets/img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    color: #060606;
+    text-align: center; /* Centra el texto dentro de la caja */
+}
+
+h2 {
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.pagination a.active {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+#btn-agregar {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 8px 16px; /* Ajusta el tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; /* Centra el botón */
+    display: block; /* Hace que el botón sea un bloque para centrarlo */
+    text-align: center; /* Centra el texto dentro del botón */
+    font-size: 14px; /* Tamaño de la fuente */
+    transition: background-color 0.3s ease;
+    width: auto; /* Ajusta el ancho automáticamente */
+}
+
+#btn-agregar:hover {
+    background-color: #8e44ad;
+}
+
+#form-agregar {
+    margin-top: 10px;
+}
+
+#form-agregar input[type="text"],
+#form-agregar select {
+    margin: 8px 0;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#form-agregar button[type="submit"] {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+
+#form-agregar button[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+.btn-eliminar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-eliminar img {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-eliminar:hover img {
+    opacity: 0.8;
+}
+.btn {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #8e44ad;
+}

@@ -1,0 +1,156 @@
+/* Barra de navegación de la sección usuarios */
+body {
+    background: url('../img/background-black.png') no-repeat center center fixed;
+}
+
+.navbar {
+    background-color: #503459; /* Color lila oscuro */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important; /* Texto blanco */
+}
+
+.navbar-brand {
+    border-right: 0.5px solid #fff; /* Línea divisoria vertical en color blanco */
+    padding-right: 10px; /* Espacio entre el texto y la línea */
+}
+
+.navbar .nav-link.active {
+    color: #dcdcdc !important; /* Color del enlace activo */
+}
+
+/* Estilos para el menú desplegable */
+.navbar .dropdown-menu {
+    background-color: #6c3483; /* Color lila oscuro para el fondo del menú desplegable */
+    border: none; /* Eliminar borde para que coincida con el fondo */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Eliminar sombra del menú desplegable */
+}
+
+.navbar .dropdown-item {
+    color: #ffffff; /* Color del texto del menú desplegable */
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    color: #ffffff; /* Color blanco para el texto en hover o focus */
+    background-color: #503459; /* Color lila oscuro para el fondo en hover o focus */
+}
+
+.navbar .dropdown-item:active {
+    color: #ffffff; /* Color blanco para el texto cuando está activo */
+    background-color: #6f42c1; /* Color lila más claro para el fondo cuando está activo */
+}
+
+.navbar .dropdown-divider {
+    border-top: 1px solid #5c3a6e; /* Línea de separación en el menú desplegable */
+}
+
+/* Botones de navegación */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco para los botones de navegación */
+}
+
+/* Botón de búsqueda */
+.btn-outline-light {
+    color: #ffffff; /* Color del texto del botón de búsqueda */
+    background-color: #9b59b6; /* Color lila más claro para el fondo del botón */
+    border-color: #9b59b6; /* Borde del botón de búsqueda */
+}
+
+.btn-outline-light:hover {
+    background-color: #8e44ad; /* Fondo del botón de búsqueda en hover */
+    color: #ffffff; /* Texto blanco en hover */
+}
+
+/* Estilo para el campo de búsqueda */
+.form-control {
+    border-color: #9b59b6; /* Color del borde del campo de búsqueda */
+}
+
+.form-control:focus {
+    border-color: #9b59b6; /* Color del borde del campo de búsqueda al hacer focus */
+    box-shadow: 0 0 0 0.2rem rgba(155, 89, 182, 0.25); /* Añadir sombra de foco en lila más claro */
+}
+
+/* Tamaño pequeño para los botones */
+.btn-img {
+    padding: 0; /* Elimina el relleno para que el botón solo contenga el ícono */
+    width: auto; /* Ajusta el ancho del botón automáticamente */
+    height: auto; /* Ajusta la altura del botón automáticamente */
+    border: none; /* Elimina cualquier borde del botón */
+    background: none; /* Establece el fondo como transparente */
+    display: inline-flex; /* Alinea la imagen dentro del botón */
+    justify-content: center; /* Centra la imagen dentro del botón */
+    align-items: center; /* Centra la imagen verticalmente dentro del botón */
+    margin-right: 10px; /* Ajusta el espacio entre los iconos según sea necesario */
+}
+
+.btn-img img {
+    margin-left: 3px;
+    width: 30px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 30px; /* Ajusta la altura de la imagen según sea necesario */
+}
+
+/* Estilo para el botón primario */
+.btn-primary {
+    background-color: #9b59b6; /* Color lila claro para el fondo del botón */
+    border-color: #9b59b6; /* Color del borde del botón */
+    color: #ffffff; /* Color del texto del botón */
+}
+
+/* Estilo para el botón primario en hover */
+.btn-primary:hover {
+    background-color: #8e44ad; /* Color lila más oscuro para el fondo en hover */
+    border-color: #8e44ad; /* Color del borde del botón en hover */
+}
+
+/* Estilo para la tabla */
+.table thead th {
+    text-align: center; /* Alinea el texto en el centro para los encabezados de columna */
+}
+
+/* Estilo para la paginación personalizada */
+.custom-pagination .page-link {
+    color: #fff;
+    background-color: #6a0dad; /* Color lila */
+    border-color: #6a0dad; /* Color lila para los bordes */
+    padding: 0.5rem 0.75rem; /* Tamaño pequeño para los enlaces de paginación */
+    font-size: 0.875rem; /* Tamaño de fuente pequeño */
+}
+
+.custom-pagination .page-link:hover {
+    color: #fff;
+    background-color: #4a0072; /* Un tono más oscuro de lila al pasar el ratón */
+    border-color: #4a0072; /* Un tono más oscuro de lila al pasar el ratón */
+}
+
+.custom-pagination .page-item.active .page-link {
+    color: #fff;
+    background-color: #4a0072; /* Un tono más oscuro de lila para el botón activo */
+    border-color: #4a0072; /* Un tono más oscuro de lila para el borde del botón activo */
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #ddd; /* Color gris claro para el botón deshabilitado */
+    background-color: #f5f5f5; /* Color gris claro para el fondo del botón deshabilitado */
+    border-color: #ddd; /* Color gris claro para el borde del botón deshabilitado */
+}
+
+/* Estilo para el form-group */
+.form-group {
+    width: auto; /* Ajusta el ancho del form-group automáticamente */
+    max-width: 100px; /* Establece un ancho máximo para el form-group */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+.form-group label {
+    font-weight: bold; /* Negrita para las etiquetas */
+    margin-bottom: 0.5rem; /* Espacio inferior para las etiquetas */
+}
+
+.form-select {
+    width: 100%; /* Ajusta el ancho del select al 100% del contenedor */
+    font-size: 0.875rem; /* Tamaño de fuente pequeño */
+}

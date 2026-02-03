@@ -1,0 +1,165 @@
+html, body {
+    background-image: url('../assets/img/background-black.png');
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.caja {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    color: #060606;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px; /* Aumentar padding para botones más grandes */
+    margin: 5px 8px; /* Agregar margen vertical (5px) y horizontal (8px) */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    background-color: #fff;
+    font-size: 14px; /* Ajustar tamaño de fuente si es necesario */
+}
+
+.pagination a.active {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+#btn-agregar {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#btn-agregar:hover {
+    background-color: #8e44ad;
+}
+
+#form-agregar {
+    margin-top: 10px; /* Reducir el margen superior para acercar el formulario al botón */
+}
+
+#form-agregar input[type="text"] {
+    margin: 8px 0; /* Reducir el margen superior e inferior */
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Aumentar ligeramente el ancho del input */
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#form-agregar button[type="submit"] {
+    background-color: #9b59b6;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 8px; /* Reducir el espacio entre el input y el botón */
+}
+
+#form-agregar button[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+.btn-eliminar {
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Apunta como botón */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+}
+
+.btn-eliminar img {
+    width: 34px; /* Tamaño de la imagen */
+    height: 34px;
+}
+
+.btn-eliminar:hover img {
+    opacity: 0.8; /* Efecto al pasar el ratón */
+}
+.valor-input {
+    margin: 8px 0; /* Espaciado vertical */
+    padding: 6px; /* Relleno interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde del campo */
+    width: 100%; /* Ancho completo */
+    font-size: 14px; /* Tamaño de fuente */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}

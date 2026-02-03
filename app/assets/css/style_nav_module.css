@@ -1,0 +1,61 @@
+.navbar {
+    padding: 0.5rem 1rem; /* Ajusta el padding vertical para reducir la altura del navbar */
+    min-height: 65px; /* Ajusta la altura mínima del navbar */
+    font-size: 0.875rem; /* Ajusta el tamaño del texto si es necesario */
+    z-index: 1030; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+/* Asegura que los elementos en el navbar se alineen correctamente */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    background-color: #503459; /* Color lila oscuro */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important; /* Texto blanco */
+
+}
+
+.navbar-brand {
+    border-right: 0.5px solid #fff; /* Línea divisoria vertical en color blanco */
+    padding-right: 10px; /* Espacio entre el texto y la línea */
+}
+
+.navbar .nav-link.active {
+    color: #dcdcdc !important; /* Color del enlace activo */
+}
+
+/* Estilos para el menú desplegable */
+.navbar .dropdown-menu {
+    background-color: #6c3483; /* Color lila oscuro para el fondo del menú desplegable */
+    border: none; /* Eliminar borde para que coincida con el fondo */
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); /* Eliminar sombra del menú desplegable */
+}
+
+.navbar .dropdown-item {
+    color: #ffffff; /* Color del texto del menú desplegable */
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    color: #ffffff; /* Color blanco para el texto en hover o focus */
+    background-color: #503459; /* Color lila oscuro para el fondo en hover o focus */
+}
+
+.navbar .dropdown-item:active {
+    color: #ffffff; /* Color blanco para el texto cuando está activo */
+    background-color: #6f42c1; /* Color lila más claro para el fondo cuando está activo */
+}
+
+.navbar .dropdown-divider {
+    border-top: 1px solid #5c3a6e; /* Línea de separación en el menú desplegable */
+}
+
+/* Botones de navegación */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color blanco para los botones de navegación */
+}

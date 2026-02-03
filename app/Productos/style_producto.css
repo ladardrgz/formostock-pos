@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url('../assets/img/view-illuminated-neon-gaming-keyboard-setup-controller.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+#container {
+    width: 100vw;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding-top: 80px; /* Da espacio para que el menú no cubra el contenido */
+}
+
+.caja {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+/* Botón de submit */
+input[type="submit"] {
+    background-color: #9b59b6; /* Color lila */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none; /* Sin borde por defecto */
+    border-radius: 5px; /* Para bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+input[type="submit"]:hover {
+    background-color: #8e44ad; /* Lila más oscuro */
+}

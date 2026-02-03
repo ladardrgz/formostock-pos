@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/background-black.png);
+    color: #333;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #6a5acd;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.buscador-producto {
+    margin-bottom: 20px;
+}
+
+.buscador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.buscador-producto-input,
+.buscador-filtro-por-categoria,
+.buscador-filtro-por-marcas,
+.buscador-filtro-por-precio {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(25% - 10px);
+    max-width: 250px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+.boton-realizar-busqueda-producto {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-realizar-busqueda-producto:hover {
+    background-color: #5b4bcd;
+}
+
+.productos {
+    margin-bottom: 20px;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.tabla-productos th {
+    background-color: #6c4e75;
+    color: white;
+}
+
+.carrito {
+    margin-top: 20px;
+}
+
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.subtotal-venta,
+.impuesto,
+.total-venta {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.valores-resumen {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resumen-item {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtotal-venta {
+    font-weight: bold;
+    color: #6a5acd;
+}
+
+.impuesto {
+    color: #333;
+}
+
+.total-venta {
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+
+
+.icono-agregar {
+    width: 24px;
+    height: 24px;
+}
+
+.fieldset-ticket-de-venta,
+.fieldset-forma-de-pago,
+.fieldset-carrito {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.fieldset-ticket-de-venta legend,
+.fieldset-forma-de-pago legend,
+.fieldset-carrito legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#buscador {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+#buscador:focus {
+    border-color: #6a5acd;
+    outline: none;
+}
+
+.label-buscador-de-cliente {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.cliente-seleccionado {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#resultado-clientes {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+}
+
+#resultado-clientes li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+#resultado-clientes li:hover {
+    background-color: #e6e6fa;
+}
+
+.paginador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.paginador a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #6c4e75;
+    border-radius: 5px;
+    color: #6a5acd;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.paginador a:hover {
+    background-color: #503459;
+    color: white;
+}
+
+.paginador .active {
+    background-color: #503459;
+    color: white;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .paginador a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .buscador-producto-input,
+    .buscador-filtro-por-categoria,
+    .buscador-filtro-por-marcas,
+    .buscador-filtro-por-precio {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .buscador-producto-input,
+    .buscador-filtro-por-categoria,
+    .buscador-filtro-por-marcas,
+    .buscador-filtro-por-precio {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+#total-venta {
+    color: green;
+}
+
+.boton {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 5px;
+}
+
+.button-cantidad {
+    background-color: #007bff;
+    color: white;
+}
+
+.button-cantidad:hover {
+    background-color: #0056b3;
+}
+
+.button-cantidad:first-of-type {
+    background-color: #dc3545;
+}
+
+.button-cantidad:first-of-type:hover {
+    background-color: #c82333;
+}
+
+.select-de-forma-pago {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.icono-agregar,
+.icono-ticket,
+.icono-carrito {
+    width: 34px;
+    height: 34px;
+}
+
+.agregar-al-carrito {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.icono-agregar {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.agregar-al-carrito span {
+    font-size: 16px;
+    color: #333;
+}
+
+.boton-realizar-busqueda-producto {
+    background-color: #6c4e75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-realizar-busqueda-producto:hover {
+    background-color: #503459;
+}
+
+.icono-busqueda {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.boton-limpiar-busquedas {
+    background-color: #6c4e75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icono-agregar {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-cantidad {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.button-cantidad:hover {
+    background-color: #5b4bcd;
+}
+
+.button-cantidad.incrementar {
+    background-color: #6a5acd;
+}
+
+.button-cantidad.decrementar {
+    background-color: #ff6a5a;
+}
+
+#finalizar-venta {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #6c4e75;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#finalizar-venta:hover {
+    background-color: #503459;
+}

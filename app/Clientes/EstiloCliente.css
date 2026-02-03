@@ -1,0 +1,35 @@
+/* Estilo personalizado para la paginación */
+.pagination.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination.custom-pagination .page-item {
+  margin: 0 2px;
+}
+
+.pagination.custom-pagination .page-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: #007bff;
+  border: 1px solid #dee2e6;
+  text-decoration: none;
+}
+
+.pagination.custom-pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination.custom-pagination .page-link:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+.pagination.custom-pagination .page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
