@@ -3,6 +3,44 @@
 FormoStock
 Point of sale (POS) system with Inventory Management for IT Supplies
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](screenshots/Dashboard.png)
+
+### Product Management
+
+![Product Management](screenshots/CRUD_Productos.png)
+
+### Sales Management
+
+![Sales Management](screenshots/CRUD_Ventas.png)
+
+### Order Management
+
+![Order Management](screenshots/CRUD_Ordenes.png)
+
+### Cash Register Opening
+
+![Cash Register Opening](screenshots/Apertura%20de%20caja%20operativa.png)
+
+### Cash Register Reconciliation
+
+![Cash Register Reconciliation](screenshots/Arqueo%20de%20caja.png)
+
+### Receipt Management
+
+![Receipt Management](screenshots/CRUD_Comprobantes.png)
+
+### Receipt Preview
+
+![Receipt Preview](screenshots/Visualizaci%C3%B3n%20de%20comprobante.png)
+
+### Order Reports
+
+![Order Reports](screenshots/Reporte_Ordenes.png)
+
 # Technical Overview #
 
 FormoStock is a web-based point of sale (POS) system designed for comprehensive management of inventory, sales, and commercial operations related to IT supplies.
